@@ -1,7 +1,3 @@
-// LEDee friend code.
-// Released under the GNU WTFPL.
-// orangethirty@nuuton.com
-
 const int LED = 13;
 const int LIGHT = 7;
 
