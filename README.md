@@ -2,7 +2,13 @@
 
 ### Getting Started
 
-To get him running, open `robo_arduino.ini` Arduino and `robo_processing.pde` in Processing. Then, upload the Arduino sketch to your Arduino and run the Processing sketch.
+To get him running...
+- Open `robo_arduino.ini` Arduino 
+- Open `robo_processing.pde` in Processing.
+- Plug your Arduino into your computer
+- Upload the Arduino sketch to your Arduino
+- Run the Processing sketch.
+
 
 Your Arduino should be something like this:
 
