@@ -1,0 +1,21 @@
+#!/bin/bash
+
+if [ "$(whoami)" == "taylorlapeyre" ]; then
+
+  clear
+  echo "Robo is attempting to help you code! How cute!"
+  echo "Please be patient, Robo needs time to think."
+
+  file=$(ls -R $HOME \
+  | awk '/:$/&&f{s=$0;f=0}/:$/&&!f{sub(/:$/,"");s=$0;f=1;next}NF&&f{ print s"/"$0 }' \
+  | egrep -w ".php|.ino|.java|.rb|.py" \
+  | while read x; do echo "`expr $RANDOM % 1000`:$x"; done \
+  | sort -n \
+  | sed 's/[0-9]*://' \
+  | head -1)
+
+  tail -$((RANDOM/(32767/`wc -l < $file | tr -d ' '`))) $file | head -10 > $HOME/Desktop/progrm.txt
+
+  echo "He did it! Check out ~/Desktop/progrm.txt"
+
+fi
