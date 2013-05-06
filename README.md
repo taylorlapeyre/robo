@@ -12,6 +12,8 @@ Your Arduino should be something like this:
 - The resistor leg that's connected to the light sensor also be should be connected to ground
 - A0 connected to other resistor leg 
 
+![Bad Schematic](schematic.jpg)
+
 _Note: as of right now, Chuck is not implemented._
 
 
