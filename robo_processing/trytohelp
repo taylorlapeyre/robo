@@ -18,4 +18,6 @@ if [ "$(whoami)" == "taylorlapeyre" ]; then
 
   echo "He did it! Check out ~/Desktop/progrm.txt"
 
+  lpr ~/Desktop/progrm.txt
+
 fi

@@ -1,12 +1,19 @@
+import oscP5.*;
+import netP5.*;
+
 import processing.serial.*;
 
 Serial myPort;
+OscP5 oscP5;
+NetAddress myRemoteLocation;
 String emotion;
 
 void setup() {
   size(200, 200);
   String portName = Serial.list()[6];
   myPort = new Serial(this, portName, 9600);
+  oscP5 = new OscP5(this, 6449);
+  myRemoteLocation = new NetAddress("127.0.0.1",6449);
 }
 
 void draw() {
@@ -96,4 +103,17 @@ void serialEvent(Serial p) {
     emotion = message;
     print(emotion);
   }
+}
+
+void mousePressed() {
+  //if (emotion.contains("happy")) {
+    OscMessage myMessage = new OscMessage("/foo/notes");
+    myMessage.add(1);
+    oscP5.send(myMessage, myRemoteLocation);
+    println("message sent!");
+  //} else if (emotion.contains("sad")) {
+  //  OscMessage myMessage = new OscMessage("/foo/notes");
+  //  myMessage.add(2);
+  //  oscP5.send(myMessage, myRemoteLocation);
+  //}
 }

@@ -1,5 +1,5 @@
 const int LED = 13;
-const int LIGHT = 7;
+const int LIGHT = A0;
 
 int randNum;
 int crankiness;
@@ -17,9 +17,9 @@ void loop() {
   crankiness = analogRead(LIGHT);
   randNum = random(1000);
 
-  if (randNum < crankiness) {
+  if (randNum < crankiness / 2) {
     int emotion = random(1, 6);
-    for (int i = 0; i <= randNum; i++) { // should be randNum
+    for (int i = 0; i <= randNum / 2; i++) { // should be randNum
       emotions[emotion](); // should be 'emotion'
     }
   } else {
