@@ -8,6 +8,7 @@ To get him running...
 - Plug your Arduino into your computer
 - Upload the Arduino sketch to your Arduino
 - Run the Processing sketch.
+- Run the chuck script
 
 
 Your Arduino should be something like this:
@@ -19,9 +20,6 @@ Your Arduino should be something like this:
 - A0 connected to other resistor leg 
 
 ![Bad Schematic](schematic.jpg)
-
-_Note: as of right now, Chuck is not implemented._
-
 
 ### About Robo
 
