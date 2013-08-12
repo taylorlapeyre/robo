@@ -1,5 +1,20 @@
 **Robo is an emotional Robot built with Arduino, Processing, and Chuck.**
 
+### About Robo
+
+Robo has 6 emotional states:
+
+- Happy
+- Sad
+- Angry
+- Bored
+- Excited
+- Shocked
+
+However, most of the time Robo is asleep (Robo is less likely to wake up when it's dark).
+
+Each emotional state will be represented by a blinking LED and a robot face in a window on your computer. If you get him excited enough, he may even try to help you code! (he tries).
+
 ### Getting Started
 
 To get him running...
@@ -20,18 +35,3 @@ Your Arduino should be something like this:
 - A0 connected to other resistor leg 
 
 ![Bad Schematic](schematic.jpg)
-
-### About Robo
-
-Robo has 6 emotional states:
-
-- Happy
-- Sad
-- Angry
-- Bored
-- Excited
-- Shocked
-
-However, most of the time Robo is asleep (Robo is less likely to wake up when it's dark).
-
-Each emotional state will be represented by a blinking LED and a robot face in a window on your computer. If you get him excited enough, he may even try to help you code! (he tries).
